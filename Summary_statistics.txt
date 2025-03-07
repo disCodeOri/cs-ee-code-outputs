@@ -1,0 +1,101 @@
+Overall Summary Statistics:
+    heuristic avg_runtime_ms                                            avg_nodes_expanded                                    
+                       mean        std    median       min         max               mean           std median  min       max
+0  euclidean       9.227682  56.829202  0.110400  0.000715  661.554003        3632.857778  21587.698723   47.0  0.0  243794.0
+1  manhattan       8.247448  52.110888  0.091863  0.000739  602.076793        3451.803333  21115.218199   39.0  0.0  242946.0
+
+Grouped Summary Statistics:
+    dataset_type density_level  heuristic  mean_runtime_ms  std_runtime_ms  median_runtime_ms  mean_nodes_expanded  std_nodes_expanded  median_nodes_expanded  scenario_count
+0         mazes          high  euclidean        18.163821       57.495455           0.178540          7447.113333        22604.653225                   84.5             150
+1         mazes          high  manhattan        15.989662       51.320529           0.140512          6960.533333        21490.911055                   67.5             150
+2         mazes           low  euclidean        13.130530       72.266475           0.094366          5210.386667        28112.546225                   44.0             150
+3         mazes           low  manhattan        11.691787       65.606900           0.081480          4953.266667        27431.724185                   38.0             150
+4         mazes        medium  euclidean        23.101351      102.099763           0.119960          8713.953333        37813.180966                   55.0             150
+5         mazes        medium  manhattan        21.040573       94.938801           0.098181          8449.993333        37440.558311                   44.0             150
+6         rooms          high  euclidean         0.214166        0.536909           0.093317            87.960000          192.652132                   39.0             150
+7         rooms          high  manhattan         0.161393        0.360283           0.078142            70.573333          152.924526                   32.5             150
+8         rooms           low  euclidean         0.385571        1.766919           0.099623           158.846667          722.435782                   40.0             150
+9         rooms           low  manhattan         0.316734        1.531852           0.098872           130.560000          594.630080                   35.0             150
+10        rooms        medium  euclidean         0.370653        0.903227           0.108695           178.886667          420.733564                   47.0             150
+11        rooms        medium  manhattan         0.284540        0.674041           0.081134           145.893333          339.964529                   38.0             150
+
+Percentage Difference in Runtime:
+ heuristic dataset_type density_level  euclidean  manhattan  percent_diff
+0                mazes          high  18.163821  15.989662    -11.969723
+1                mazes           low  13.130530  11.691787    -10.957234
+2                mazes        medium  23.101351  21.040573     -8.920596
+3                rooms          high   0.214166   0.161393    -24.641313
+4                rooms           low   0.385571   0.316734    -17.853256
+5                rooms        medium   0.370653   0.284540    -23.232795
+
+Percentage Difference in Nodes Expanded:
+ heuristic dataset_type density_level    euclidean    manhattan  percent_diff
+0                mazes          high  7447.113333  6960.533333     -6.533807
+1                mazes           low  5210.386667  4953.266667     -4.934759
+2                mazes        medium  8713.953333  8449.993333     -3.029165
+3                rooms          high    87.960000    70.573333    -19.766561
+4                rooms           low   158.846667   130.560000    -17.807529
+5                rooms        medium   178.886667   145.893333    -18.443707
+
+Summary by Map:
+                  map  heuristic  mean_runtime_ms  std_runtime_ms  mean_nodes_expanded  std_nodes_expanded
+0     16room_000.map  euclidean         0.396410        0.955668               187.92          456.458811
+1     16room_000.map  manhattan         0.294625        0.700532               152.06          370.161102
+2     16room_001.map  euclidean         0.395129        1.056351               187.78          473.123891
+3     16room_001.map  manhattan         0.305360        0.782568               152.76          376.072375
+4     16room_002.map  euclidean         0.320418        0.669114               160.96          324.934779
+5     16room_002.map  manhattan         0.253634        0.526175               132.86          269.694461
+6     32room_000.map  euclidean         0.282482        0.674450               117.66          323.897288
+7     32room_000.map  manhattan         0.237988        0.689729                98.12          284.276141
+8     32room_001.map  euclidean         0.244315        0.558764                89.24          174.716862
+9     32room_001.map  manhattan         0.183928        0.342165                73.30          146.286307
+10    32room_002.map  euclidean         0.629916        2.938402               269.64         1196.832039
+11    32room_002.map  manhattan         0.528287        2.544149               220.26          979.971674
+12     8room_000.map  euclidean         0.180533        0.295832                83.42          143.259446
+13     8room_000.map  manhattan         0.145521        0.268471                66.80          114.541678
+14     8room_001.map  euclidean         0.171757        0.212018                72.88           87.235230
+15     8room_001.map  manhattan         0.132280        0.147437                58.08           64.591602
+16     8room_002.map  euclidean         0.290208        0.857451               107.58          289.966014
+17     8room_002.map  manhattan         0.206378        0.545628                86.84          231.033734
+18  maze512-16-0.map  euclidean        18.200798       77.285337              6717.24        27601.693156
+19  maze512-16-0.map  manhattan        16.044238       70.065960              6355.48        26759.645562
+20  maze512-16-1.map  euclidean        16.642715       93.475925              6145.62        33221.240420
+21  maze512-16-1.map  manhattan        14.758923       85.035769              5934.46        33075.598538
+22  maze512-16-2.map  euclidean        34.460540      129.572611             13279.00        49500.527573
+23  maze512-16-2.map  manhattan        32.318558      122.768782             13060.04        49192.567417
+24  maze512-32-0.map  euclidean        10.814569       74.012043              4188.66        28470.745695
+25  maze512-32-0.map  manhattan         9.770289       67.169567              4056.84        27746.745544
+26  maze512-32-1.map  euclidean         6.337913       29.663262              2697.24        12549.308126
+27  maze512-32-1.map  manhattan         5.542968       26.211103              2498.82        11773.000229
+28  maze512-32-2.map  euclidean        22.239109       96.879232              8745.26        37614.819792
+29  maze512-32-2.map  manhattan        19.762104       88.209419              8304.14        36895.834203
+30   maze512-8-0.map  euclidean        30.001581       86.541934             11865.88        33295.365878
+31   maze512-8-0.map  manhattan        26.544074       76.887727             11066.22        31583.464803
+32   maze512-8-1.map  euclidean        11.045012       25.492246              4753.46        10855.041526
+33   maze512-8-1.map  manhattan         9.447298       21.827923              4385.58        10081.639566
+34   maze512-8-2.map  euclidean        13.444870       41.174283              5722.00        17233.371254
+35   maze512-8-2.map  manhattan        11.977615       38.038682              5429.80        16700.812191
+
+Outlier Impact:
+    dataset_type density_level  heuristic  avg_runtime_ms_with  avg_nodes_expanded_with  avg_runtime_ms_without  avg_nodes_expanded_without  runtime_percent_change  nodes_percent_change
+0         mazes          high  euclidean            18.163821              7447.113333                0.678131                  309.900000               96.266584             95.838656
+1         mazes          high  manhattan            15.989662              6960.533333                0.475546                  241.915966               97.025915             96.524462
+2         mazes           low  euclidean            13.130530              5210.386667                0.119836                   56.242424               99.087351             98.920571
+3         mazes           low  manhattan            11.691787              4953.266667                0.097087                   46.436090               99.169614             99.062516
+4         mazes        medium  euclidean            23.101351              8713.953333                0.200949                   90.800000               99.130144             98.957993
+5         mazes        medium  manhattan            21.040573              8449.993333                0.141777                   67.781513               99.326172             99.197851
+6         rooms          high  euclidean             0.214166                87.960000                0.105088                   45.492537               50.931369             48.280426
+7         rooms          high  manhattan             0.161393                70.573333                0.084045                   37.533333               47.925356             46.816550
+8         rooms           low  euclidean             0.385571               158.846667                0.135248                   54.620438               64.922759             65.614363
+9         rooms           low  manhattan             0.316734               130.560000                0.108933                   45.311594               65.607402             65.294428
+10        rooms        medium  euclidean             0.370653               178.886667                0.133522                   66.358209               63.976503             62.904888
+11        rooms        medium  manhattan             0.284540               145.893333                0.104768                   54.865672               63.179871             62.393298
+
+Correlation Statistics:
+Pearson: Density vs Runtime: -0.079
+Pearson: Density vs Nodes Expanded: -0.080
+Pearson: Runtime vs Nodes Expanded: 0.998
+
+Finalizing output...
+
+Summary statistics saved as 'sum_summary_stats.csv'
