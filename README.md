@@ -1,3 +1,3 @@
 # cs-ee-code-outputs
 
-Please refer to the above files, named respectively to their parent program.
+Please refer to the above files, named with respect to their parent program attached in the Extended Essay document and in this repository
