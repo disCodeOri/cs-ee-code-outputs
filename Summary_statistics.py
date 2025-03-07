@@ -28,9 +28,9 @@ def output_to_file_and_console(filename):
         sys.stdout = original_stdout
 
 # Main analysis code wrapped in the context manager
-with output_to_file_and_console('summary_stats.txt'):
+with output_to_file_and_console('Summary_statistics.txt'):
     # Load the dataset with outlier flags
-    df = pd.read_csv('results_with_outliers.csv')
+    df = pd.read_csv('Outlier_detection_results')
 
     # Ensure columns are numeric
     df['avg_runtime_ms'] = pd.to_numeric(df['avg_runtime_ms'], errors='coerce')
@@ -131,5 +131,5 @@ with output_to_file_and_console('summary_stats.txt'):
     print("\nFinalizing output...")
 
     # Save summary for use in EE
-    grouped_summary.to_csv('summary_stats.csv', index=False)
-    print("\nSummary statistics saved as 'summary_stats.csv'")
+    grouped_summary.to_csv('Summary_statistics.txt', index=False)
+    print("\nSummary statistics saved as 'Summary_statistics.txt'")
